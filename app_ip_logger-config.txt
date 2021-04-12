@@ -1,0 +1,7 @@
+app_name="chrome.exe explorer.exe"
+app_list_file=app-list.txt
+log_file="app_ip_logger.txt"
+public_ip_host="ifconfig.me"
+reverse_lookup=0
+dns_server="8.8.8.8"
+sleep=1
