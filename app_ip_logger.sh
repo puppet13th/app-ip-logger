@@ -57,7 +57,7 @@ do
     for loop in ${!app_list[@]}
     do
 		app="${app_list[$loop]}"
-        app_pids=`$ps_cmd | grep -i "${app}" | awk '{print '${ps_col}'}'`
+		app_pids=`$ps_cmd | grep -i "${app}" | awk '{print $'${ps_col}'}'`
         if [ ! -z "${app_pids}" ]
         then
             for pid in ${app_pids}
@@ -96,5 +96,6 @@ do
             done
         fi
     done
+	#debug
     sleep ${sleep}
 done
