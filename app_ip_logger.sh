@@ -83,11 +83,11 @@ do
 								echo ${ip_logged} | grep -q ${new_ip}
 								if [ $? -eq 1 ]
 								then
-									echo ${app} : ${new_ip} ${ip_name} ADDED
+									echo "[+] "${app} : ${new_ip} ${ip_name}
 									echo ${app} : ${new_ip} ${ip_name} >> ${log_file}
 									ip_logged=`cat ${log_file}`
 								else
-									echo ${app} : ${new_ip} ${ip_name} EXIST
+									echo "[=] "${app} : ${new_ip} ${ip_name}
 								fi
 							fi
                         fi
